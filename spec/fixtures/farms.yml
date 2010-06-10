@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  organic: false
+  latitude: 1.5
+  longitude: 1.5
+  altitude: 1.5
+
+two:
+  name: MyString
+  organic: false
+  latitude: 1.5
+  longitude: 1.5
+  altitude: 1.5

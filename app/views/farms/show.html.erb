@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @farm.name %>
+</p>
+
+<p>
+  <b>Organic:</b>
+  <%=h @farm.organic %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%=h @farm.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @farm.longitude %>
+</p>
+
+<p>
+  <b>Altitude:</b>
+  <%=h @farm.altitude %>
+</p>
+
+
+<%= link_to 'Edit', edit_farm_path(@farm) %> |
+<%= link_to 'Back', farms_path %>

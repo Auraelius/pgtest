@@ -1,0 +1,32 @@
+<h1>Editing farm</h1>
+
+<% form_for(@farm) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :organic %><br />
+    <%= f.check_box :organic %>
+  </p>
+  <p>
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </p>
+  <p>
+    <%= f.label :altitude %><br />
+    <%= f.text_field :altitude %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @farm %> |
+<%= link_to 'Back', farms_path %>

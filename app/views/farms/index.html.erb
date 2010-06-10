@@ -1,0 +1,28 @@
+<h1>Listing farms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Organic</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Altitude</th>
+  </tr>
+
+<% @farms.each do |farm| %>
+  <tr>
+    <td><%=h farm.name %></td>
+    <td><%=h farm.organic %></td>
+    <td><%=h farm.latitude %></td>
+    <td><%=h farm.longitude %></td>
+    <td><%=h farm.altitude %></td>
+    <td><%= link_to 'Show', farm %></td>
+    <td><%= link_to 'Edit', edit_farm_path(farm) %></td>
+    <td><%= link_to 'Destroy', farm, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New farm', new_farm_path %>
