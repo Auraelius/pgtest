@@ -1,6 +1,10 @@
 == Test of PostgreSQL adaptation
 
-Up to now, MySQL's been the cat's meow
-But a new database is now required,
-If this newbie's to be hired.
-It's time for PostgreSQL to take a bow.
+up to now, MySQL's been the cat's meow
+but something new is now required,
+if this newbie's to be hired.
+and it's time for PostgreSQL to take a bow.
+
+
+It's just one table, but you can CRUD it up at http://vivid-autumn-34.heroku.com/farms
+
